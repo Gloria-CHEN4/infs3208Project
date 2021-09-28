@@ -17,13 +17,25 @@ body {
 }
 
 /* Style the header */
-header {
-  background-color: #9BCD9B;
-  padding: 30px;
+.hero-image {
+  background-image: url("/w3images/photographer.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
   text-align: center;
-  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
 }
+
 a{
   margin: auto;
   width: 50%;
@@ -106,19 +118,15 @@ footer {
 </head>
 <body>
 
-<header>
-    <h2>Let's start exercising now!</h2>
-    <div id="ready-part">
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">How long havn't you exercised?</h1>
+    <h3>And let's start exercising!</h3>
     <a href=<?php echo site_url('Main_page'); ?>>Are you ready?</a>
-    </div>
-</header>
+  </div>
+</div>
 
 <section id="main-part">
-    <div id="images">
-        <img id='im2'  src="<?php echo base_url(); ?>uploads/exercise2.jpg" style="width:50%;height:auto;"/>
-        <img id='im1'  src="<?php echo base_url(); ?>uploads/exercise1.jpg" style="width:50%;height:auto;"/>
-    </div>
-
     <article id="introduction-part">
         <h3>Introduction of this web server</h3>
         <p>Helllo, guys! Now what you are viewing is a web information system about event scheduler. With the rapid development of the social and economic level globally, more and more people have to increase working hours and pay less attention to their health. Bingdi, Shengqi, Zhangqi, Da, Jian & Xiaoyi(2017) states that there are 23.2% of participants spending 10–12h and 8.8% for more hours on working every day. This is my initial inspiration to design this web.</p>
@@ -126,8 +134,6 @@ footer {
         <p>Therefore, based on improving people’s realization on body and psychology health, I come up with such a sharing platform to share variety of exercising events for people in Brisbane.</p>
         <p>In my web information system, people can search for their interested excising events, view nearby public events by integrating with google map, as well as creating their own events and inviting other users to an event via email.</p>
     </article>
-
-
 
 </section>
     
