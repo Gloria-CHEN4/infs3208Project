@@ -1,0 +1,42 @@
+version: '3.3'
+services:
+  apache:
+    image: httpd:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./app:/var/www/html
+
+  mysql:
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    volumes:
+      - ./data/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: deco3208
+      MYSQL_USER: gloria
+     
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: myphpmyadmin
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    ports:
+      - 8080:80
+    links:
+      - mysql
+
+  mynginx:
+          build:
+                  context: .
+                  dockerfile: dockerfile
+          depends_on:
+                  - apache
+          ports:
+                  - 9000:80
+          restart: always
+
