@@ -18,6 +18,26 @@
             font-size: 35px;
             color: white;
         }
+
+        .hero-image {
+            background-image: url("/w3images/photographer.jpg");
+            background-color: #cccccc;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
         ul {
             list-style-type: none;
             margin-left: 40%;
@@ -62,7 +82,12 @@
   
 
     <header>
-        <h2>Let's start exercising now!</h2>
+        <div class="hero-image">
+            <div class="hero-text">
+                <h3>And let's start exercising!</h3>
+            </div>
+        </div>
+        
         <ul>
             <?php if(!$this->session->userdata('username')){
                 //echo "hello";
