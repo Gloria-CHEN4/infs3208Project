@@ -4,126 +4,126 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Let's start exercising now!</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+    <title>Let's start exercising now!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-/* Style the header */
-.hero-image {
-  background-image: url("/w3images/photographer.jpg");
-  background-color: #cccccc;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+        /* Style the header */
+        .hero-image {
+            background-image: url("<?php echo base_url(); ?>uploads/yoga_river.jpg");
+            background-color: #cccccc;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
 
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
 
-a{
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
-  border-radius: 50px 20px;
-}
+        a{
+            margin: auto;
+            width: 30%;
+            border: 3px solid green;
+            padding: 10px;
+            border-radius: 50px 20px;
+        }
 
-a:link, a:visited {
-  background-color: #f1f1f1;
-  color: green;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
+        a:link, a:visited {
+            background-color: #f1f1f1;
+            color: green;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
 
-a:hover, a:active {
-  background-color: green;
-  color: white;
-}
+        a:hover, a:active {
+            background-color: green;
+            color: white;
+        }
 
-#main-part{
-  margin-top: 10px;
-}
+        #main-part{
+            margin-top: 10px;
+        }
 
-#main-part h3{
-  color: green;
-  text-align: center;
-}
+        #main-part h3{
+            color: green;
+            text-align: center;
+        }
 
-#introduction-part{
-  float: left;
-  background-color: #f1f1f1;
-  width: 100%;
-  height: auto;
-  border: 2px solid green;
-  padding: 5px;
-}
+        #introduction-part{
+            float: left;
+            background-color: #f1f1f1;
+            width: 100%;
+            height: auto;
+            border: 2px solid green;
+            padding: 5px;
+        }
 
-#introduction-part p{
-  float: left;
-  margin: 5px 10px 5px 10px;
-}
+        #introduction-part p{
+            float: left;
+            margin: 5px 10px 5px 10px;
+        }
 
-#images {
-    padding: 5px;
-    width: 100%;
-    height: auto;
-    background-color: #f1f1f1;
-    border: 2px solid green;
-    margin-bottom: 5px;
-    display: inline-block;
-}
+        #images {
+            padding: 5px;
+            width: 100%;
+            height: auto;
+            background-color: #f1f1f1;
+            border: 2px solid green;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
 
-#im1 {
-    float:left;
-}
+        #im1 {
+            float:left;
+        }
 
-#im2 {
-    float:right;
-}
+        #im2 {
+            float:right;
+        }
 
-section:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
-/* Style the footer */
-footer {
-    margin-top: 10px;
-    background-color: #9BCD9B;
-    padding: 10px;
-    text-align: center;
-    color: white;
-}
+        /* Style the footer */
+        footer {
+            margin-top: 10px;
+            background-color: #9BCD9B;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
 
 
-</style>
+    </style>
 </head>
 <body>
 
 <div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px">How long havn't you exercised?</h1>
-    <h3>And let's start exercising!</h3>
-    <a href=<?php echo site_url('Main_page'); ?>>Are you ready?</a>
-  </div>
+    <div class="hero-text">
+        <h1 style="font-size:50px">How long haven't you exercised?</h1>
+        <h3>And let's start exercising!</h3>
+        <a href=<?php echo site_url('Main_page'); ?>>Are you ready?</a>
+    </div>
 </div>
 
 <section id="main-part">
@@ -136,11 +136,11 @@ footer {
     </article>
 
 </section>
-    
+
 
 <footer>
-  <p>Terms and conditions</p>
-  <p>Contact us</p>
+    <p>Terms and conditions</p>
+    <p>Contact us</p>
 </footer>
 
 </body>

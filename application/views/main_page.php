@@ -1,36 +1,41 @@
 <style>
 
   #main-part{
-    margin-top: 10px;
+      margin-top: 10px;
   }
   
   #main-part h3{
-    color: green;
-    text-align: center;
+      color: green;
+      text-align: center;
   }
   
   #forms-part{
-    float: left;
-    background-color: #f1f1f1;
-    width: 20%;
-    height: 430px;
-    border: 2px solid green;
-    text-align: center;
+      float: left;
+      background-color: #f1f1f1;
+      width: 20%;
+      height: 430px;
+      border: 2px solid green;
+      text-align: center;
   }
   
   #forms{
-    border-bottom: 2px solid green;
-    padding-bottom: 5px;
+      border-bottom: 2px solid green;
+      padding-bottom: 5px;
+      height: 50%;
+  }
+
+  #Invitation-part {
+      height: 50%;
   }
   
   #map{
-    float: left;
-    padding: 5px;
-    width: 79%;
-    height: 430px;
-    background-color: #f1f1f1;
-    border: 2px solid green;
-    margin-left: 1%;
+      float: left;
+      padding: 5px;
+      width: 79%;
+      height: 430px;
+      background-color: #f1f1f1;
+      border: 2px solid green;
+      margin-left: 1%;
   }
   
   
@@ -51,14 +56,6 @@
         <div id="response"></div>
        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
-      </div>
-
-      <div id="forms">
-        <h3>Upload a file here! </h3>
-        <button type="submit" name="Go" id="Go"><a href=<?php echo site_url('Upload');?>>Go</a></button>
-        <h3>Manipulating an uploaded image here! </h3>
-        <button type="submit" name="Go" id="Go"><a href=<?php echo site_url('Manipulation_controller');?>>Go</a></button>
-        
       </div>
 
       <div id="Invitation-part">
