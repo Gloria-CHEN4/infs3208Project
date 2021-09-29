@@ -66,6 +66,30 @@
             clear: both;
         }
 
+        .topnav {
+            overflow: hidden;
+            background-color: #d8d8d8;
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: green;
+        }
+
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
         /* Style the footer */
         footer {
             margin-top: 10px;
@@ -80,32 +104,27 @@
 
 
 <header>
-    <div class="hero-image">
-        <div class="hero-text">
-            <h3 style="font-size:30px">And let's start exercising!</h3>
-        </div>
-    </div>
-
-    <ul>
+    <div class="topnav">
+        <a class="active" href="welcome">Homepage</a>
         <?php if(!$this->session->userdata('username')){
             //echo "hello";
-            echo"<li><a href='Sign_Up'> Sign up </a></li>
-                     <li class='nav-item'>
-                        <a href='Log_In'> Log in </a>
-                     </li>";
+            echo"<a href='Sign_Up'> Sign up </a>
+                 <a href='Log_In'> Log in </a>";
         } ?>
 
         <?php if($this->session->userdata('username')){
             //echo "hello";
-            echo"<li><a href='User_profile'> Profile </a></li>
-                     <li class='nav-item'>
-                        <a href='Log_In/Logout'> Log out </a>
-                     </li>";
+            echo"<a href='User_profile'> Profile </a>
+                 <a href='Log_In/Logout'> Log out </a>";
         } ?>
+    </div>
 
+    <div class="hero-image">
+        <div class="hero-text">
+            <h3 style="font-size:30px">Let's start exercising!</h3>
+        </div>
+    </div>
 
-        <li><a href="welcome">Homepage</a></li>
-    </ul>
 </header>
 
 
